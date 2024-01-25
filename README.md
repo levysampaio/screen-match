@@ -1,6 +1,6 @@
-# Screen Match
+# ScreenMatch
 
-An Streaming Serice Tool
+An Streaming Service Tool
 
 ## Getting Started
 
@@ -25,6 +25,7 @@ of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
+0.0
 
 ## Authors
 
