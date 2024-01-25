@@ -1,6 +1,6 @@
 # ScreenMatch
 
-An Streaming Service Tool
+It's a Streaming Service Tool
 
 ## Getting Started
 
