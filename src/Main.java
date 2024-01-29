@@ -1,5 +1,6 @@
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
+import br.com.alura.sreenmatch.calculos.*;
 
 public class Main {
 
@@ -35,6 +36,12 @@ public class Main {
 		
 		minhaSerie.exibirFichaTecnica();
 		
+		CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+		
+		calculadora.incluir(minhaSerie);
+		calculadora.incluir(meuFilme);
+		
+		System.out.println("Tempo total para assistir " + minhaSerie.getNome() + " e " + meuFilme.getNome() + " = " + calculadora.getTempoTotal() + " Minutos");
 		
 		
 	}
