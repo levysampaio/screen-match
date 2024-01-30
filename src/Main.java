@@ -1,6 +1,6 @@
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
-import br.com.alura.sreenmatch.calculos.*;
+import br.com.alura.sreenmatch.calculos.CalculadoraDeTempo;
 
 public class Main {
 
