@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import br.com.alura.screenmatch.modelos.Epsodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
@@ -20,9 +22,20 @@ public class Main {
 		meuFilme.darNotaAvaliacao(3.0);
 		meuFilme.darNotaAvaliacao(10.0);
 		
+		
 		meuFilme.exibirFichaTecnica();
 		
 		
+		Filme nossoFilme = new Filme();
+		nossoFilme.setNome("Avatar");
+		nossoFilme.setAnoLancamento(2010);
+		nossoFilme.setDuracaoMinuto(2000);
+		
+		
+		Filme vossoFilme = new Filme();
+		vossoFilme.setNome("Os vingadores");
+		vossoFilme.setAnoLancamento(2016);
+		vossoFilme.setDuracaoMinuto(2600);
 		
 		Serie minhaSerie = new Serie();
 		
@@ -37,6 +50,7 @@ public class Main {
 		minhaSerie.darNotaAvaliacao(10.0);
 		
 		minhaSerie.exibirFichaTecnica();
+		
 		
 		CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
 		
@@ -53,6 +67,9 @@ public class Main {
 		ep.setSerie(minhaSerie);
 		ep.setTotalVisualizacao(800);
 		filtro.filtra(ep);
+		
+		ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+		
 		
 		
 		
