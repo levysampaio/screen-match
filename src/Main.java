@@ -60,15 +60,25 @@ public class Main {
 		System.out.println("Tempo total para assistir " + minhaSerie.getNome() + " e " + meuFilme.getNome() + " = " + calculadora.getTempoTotal() + " Minutos\n");
 		
 		FiltroRecomendacao filtro = new FiltroRecomendacao();
+		
+		System.out.print("O Filme " + meuFilme.getNome() + " está "  );
 		filtro.filtra(meuFilme);
 		
 		Epsodio ep = new Epsodio();
+		ep.setNome("A volta de Freeza");
 		ep.setNumero(1);
 		ep.setSerie(minhaSerie);
 		ep.setTotalVisualizacao(800);
+		System.out.print("O Epsodio " + ep.getNome() + " está "  );
 		filtro.filtra(ep);
 		
 		ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+		listaDeFilmes.add(vossoFilme);
+		listaDeFilmes.add(nossoFilme);
+		listaDeFilmes.add(meuFilme);
+		
+		System.out.println("Quantos filmes tem na lista? R: " + listaDeFilmes.size());
+		System.out.println("Qual o primeiro filme da lista? R: " + listaDeFilmes.get(0).getNome());
 		
 		
 		
