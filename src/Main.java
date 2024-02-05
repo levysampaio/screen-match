@@ -10,30 +10,23 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Filme meuFilme = new Filme();
-		
-		meuFilme.setNome("Top Gun");
-		meuFilme.setAnoLancamento(1990);
+		Filme meuFilme = new Filme("Interstella");
+		meuFilme.setAnoLancamento(2007);
 		meuFilme.setDuracaoMinuto(1600);
-		
 		meuFilme.darNotaAvaliacao(8.0);
 		meuFilme.darNotaAvaliacao(6.0);
 		meuFilme.darNotaAvaliacao(9.0);
 		meuFilme.darNotaAvaliacao(3.0);
-		meuFilme.darNotaAvaliacao(10.0);
-		
-		
+		meuFilme.darNotaAvaliacao(10.0);	
 		meuFilme.exibirFichaTecnica();
 		
 		
-		Filme nossoFilme = new Filme();
-		nossoFilme.setNome("Avatar");
+		Filme nossoFilme = new Filme("Avatar");
 		nossoFilme.setAnoLancamento(2010);
 		nossoFilme.setDuracaoMinuto(2000);
 		
 		
-		Filme vossoFilme = new Filme();
-		vossoFilme.setNome("Os vingadores");
+		Filme vossoFilme = new Filme("Os vingadores");
 		vossoFilme.setAnoLancamento(2016);
 		vossoFilme.setDuracaoMinuto(2600);
 		
@@ -80,8 +73,8 @@ public class Main {
 		System.out.println("Quantos filmes tem na lista? R: " + listaDeFilmes.size());
 		System.out.println("Qual o primeiro filme da lista? R: " + listaDeFilmes.get(0).getNome());
 		
-		
-		
+		System.out.println(listaDeFilmes.toString());
+	
 		
 	}
 
