@@ -10,8 +10,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Filme meuFilme = new Filme("Interstella");
-		meuFilme.setAnoLancamento(2007);
+		Filme meuFilme = new Filme("Interstella", 2007);
 		meuFilme.setDuracaoMinuto(1600);
 		meuFilme.darNotaAvaliacao(8.0);
 		meuFilme.darNotaAvaliacao(6.0);
@@ -21,19 +20,14 @@ public class Main {
 		meuFilme.exibirFichaTecnica();
 		
 		
-		Filme nossoFilme = new Filme("Avatar");
-		nossoFilme.setAnoLancamento(2010);
+		Filme nossoFilme = new Filme("Avatar", 2010);
 		nossoFilme.setDuracaoMinuto(2000);
 		
 		
-		Filme vossoFilme = new Filme("Os vingadores");
-		vossoFilme.setAnoLancamento(2016);
+		Filme vossoFilme = new Filme("Os vingadores", 2016);
 		vossoFilme.setDuracaoMinuto(2600);
 		
-		Serie minhaSerie = new Serie();
-		
-		minhaSerie.setNome("The Big Bang Theory");
-		minhaSerie.setAnoLancamento(2007);
+		Serie minhaSerie = new Serie("The Big Bang Theory", 2007);
 		minhaSerie.setDuracaoMinuto(30);
 		
 		minhaSerie.darNotaAvaliacao(9.5);
