@@ -1,5 +1,7 @@
 package br.com.alura.screenmatch.principal;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import br.com.alura.screenmatch.modelos.Epsodio;
 import br.com.alura.screenmatch.modelos.Filme;
@@ -67,6 +69,24 @@ public class Main {
 		System.out.println("Qual o primeiro filme da lista? R: " + listaDeFilmes.get(0).getNome());
 
 		System.out.println(listaDeFilmes.toString());
+		
+		
+		ArrayList<String> buscaPorArtista = new ArrayList<>();
+		buscaPorArtista.add("Zézin");
+		buscaPorArtista.add("Maria");
+		buscaPorArtista.add("João");
+		
+		Collections.sort(buscaPorArtista);
+		
+		System.out.println(buscaPorArtista);
+		
+		Collections.sort(listaDeFilmes);
+		
+		System.out.println(listaDeFilmes);
+		
+		
+		
+		
 
 	}
 
